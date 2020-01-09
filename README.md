@@ -20,8 +20,6 @@ npm install markdown-it-vue
 - GFM TOC
 - GFM style
 - emoji
-- [mermaid charts](http://knsv.github.io/mermaid/)
-- [Echarts](http://echarts.baidu.com)
 - Flowcharts.js
 - Subscript/Superscript
 - [AsciiMath](http://asciimath.org/)
@@ -40,7 +38,6 @@ npm install markdown-it-vue
 - markdown-it-mark
 - markdown-it-katex
 - markdown-it-task-lists
-- markdown-it-icons
 - markdown-it-highlight
 - markdown-it-latex
 - markdown-it-container
@@ -50,13 +47,11 @@ npm install markdown-it-vue
 
 internal plugin list:
 
-- markdown-it-plugin-echarts
-- markdown-it-plugin-mermaid
 - markdown-it-plugin-flowchart
 
 ## Options
 
-use `options` property to sepcial the options of markdow-it and markdown-it-plugins.
+use `options` property to specify the options of markdow-it and markdown-it-plugins.
 
 ```html
 <markdown-it-vue class="md-body" :content="content" :options="options" />
@@ -91,16 +86,6 @@ amd default plugins options:
   katex: {
     throwOnError: false,
     errorColor: '#cc0000'
-  },
-  icons: 'font-awesome',
-  githubToc: {
-    tocFirstLevel: 2,
-    tocLastLevel: 3,
-    tocClassName: 'toc',
-    anchorLinkSymbol: '',
-    anchorLinkSpace: false,
-    anchorClassName: 'anchor',
-    anchorLinkSymbolClassName: 'octicon octicon-link'
   }
 }
 ```
